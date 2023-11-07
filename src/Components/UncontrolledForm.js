@@ -21,6 +21,8 @@ const UncontrolledForm = () => {
     const password = passwordInputRef.current.value;
 
 
+    // can do validation liogid here if we need to
+
     const data = {
       name, email, password
     }
@@ -33,7 +35,6 @@ const UncontrolledForm = () => {
     emailInputRef.current.value = '';
     passwordInputRef.current.value = '';
 
-    // Additional registration logic
   };
 
   return (
