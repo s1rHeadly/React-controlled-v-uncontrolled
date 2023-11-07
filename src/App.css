@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .App-logo {
@@ -35,4 +37,22 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+
+
+.uncontrolled-form{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: max(400px, 90%);
+}
+
+
+input[type="text"], input[type="number"]{
+  width: 45%;
+  height: min(40px, 95%);
 }
