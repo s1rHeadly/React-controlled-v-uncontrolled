@@ -1,17 +1,15 @@
 import ControlledForm from "./Components/ControlledForm";
-import UncontrolledForm from "./Components/UncontrolledForm";
 
 function App() {
 
-  const getData = (e)  => {
-    e.preventDefault();
-    console.log()
+  const getData = (data)  => {
+      console.log(data)
   }
   return (
     <div className="App">
 
      
-     <ControlledForm onSubmit={getData}/>
+     <ControlledForm onGetData={getData}/>
 
     </div>
   );
