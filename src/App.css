@@ -42,6 +42,11 @@
 
 
 
+form{
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
 .uncontrolled-form{
   display: flex;
   flex-wrap: wrap;
@@ -52,7 +57,7 @@
 }
 
 
-input[type="text"], input[type="number"]{
-  width: 45%;
+input{
+  width: 100%;
   height: min(40px, 95%);
 }

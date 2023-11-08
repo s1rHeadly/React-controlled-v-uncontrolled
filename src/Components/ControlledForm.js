@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 const ControlledForm = ({onGetData}) => {
 
@@ -7,12 +7,21 @@ const ControlledForm = ({onGetData}) => {
 const [name, setName] = useState('');
 const [email, setEmail] = useState('');
 const [password, setPassword] = useState('');
+const [errors, setErrors] = useState({})
 
 
+
+useEffect(() => {
+  
+  return () => {
+  
+  };
+}, [name, email, password]);
 
 // function
   const onSubmitData = (e) => {
         e.preventDefault();
+
 
         const dataObj = {
           name, email, password
